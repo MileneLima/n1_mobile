@@ -8,13 +8,13 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
  
 ## Funcionalidades
  
-### - Tela de login:
+### Tela de login:
 - Input de email
 - Input de senha
 - Botão cadastrar-se
 - Botão entrar
  
-### - Tela de cadastro do usuário:
+### Tela de cadastro do usuário:
 - Input de email
 - Input de senha
 - Input nacionalidade
@@ -22,10 +22,10 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
 - Botão voltar
 - Botão entrar
  
-### - Tela de categorias:
+### Tela de categorias:
 - Botão para categoria
  
-### - Tela de perfil:
+### Tela de perfil:
 - Foto de perfil
 - Nacionalidade
 - Quantidade de notas
@@ -34,12 +34,12 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
 - Adicionar nova nota
 - Adicionar categorias
  
-### - Tela home:
+### Tela home:
 - Visualizar notas
 - Like em nota
 - Dislike em nota
  
-### - Menu lateral:
+### Menu lateral:
 - Foto de perfil
 - Nome do usuário
 - Navegar p/ perfil
