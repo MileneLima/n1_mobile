@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:n1_mobile/notes.dart';
 
 class ProfilePage extends StatelessWidget {
-  final String userName = "Milene Lima"; 
-  final String country = "Brasil"; 
-  final int noteCount = 10; 
-  final int likeCount = 100; 
+  final String userName = "Milene Lima";
+  final String country = "Brasil";
+  final int noteCount = 10;
+  final int likeCount = 100;
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +25,7 @@ class ProfilePage extends StatelessWidget {
                 const CircleAvatar(
                   radius: 80.0,
                   backgroundColor: Colors.white,
-                  backgroundImage: AssetImage(
-                      '../lib/assets/65581.png'),
+                  backgroundImage: AssetImage('../lib/assets/65581.png'),
                 ),
                 const SizedBox(width: 16.0),
                 Column(
@@ -86,10 +86,17 @@ class ProfilePage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => NotesPage(),
+                        ),
+                        (route) => false,
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.black,
-                      minimumSize: Size(150, 50), 
+                      minimumSize: Size(150, 50),
                     ),
                     child: const Text('Visualizar notas',
                         style: TextStyle(fontSize: 16.0, color: Colors.white)),
@@ -98,10 +105,30 @@ class ProfilePage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.black, 
-                      minimumSize: Size(150, 50), 
+                      primary: Colors.black,
+                      minimumSize: Size(150, 50),
                     ),
                     child: const Text('Adicionar notas',
+                        style: TextStyle(fontSize: 16.0, color: Colors.white)),
+                  ),
+                  const SizedBox(height: 16.0),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.black,
+                      minimumSize: Size(150, 50),
+                    ),
+                    child: const Text('Editar notas',
+                        style: TextStyle(fontSize: 16.0, color: Colors.white)),
+                  ),
+                  const SizedBox(height: 16.0),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.black,
+                      minimumSize: Size(150, 50),
+                    ),
+                    child: const Text('Deletar notas',
                         style: TextStyle(fontSize: 16.0, color: Colors.white)),
                   ),
                 ],
