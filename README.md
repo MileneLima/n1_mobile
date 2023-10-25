@@ -30,11 +30,11 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
 - Nacionalidade
 - Quantidade de notas
 - Quantidade de notas avalidadas
-- Visualizar todas as notas
-- Adicionar nova nota
-- Adicionar categorias
  
 ### Tela home:
+- Visualizar notas
+
+### Tela notas:
 - Visualizar notas
 - Like em nota
 - Dislike em nota
@@ -45,11 +45,8 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
 - Navegar p/ perfil
 - Navegar p/ home
 - Navegar p/ categorias
+- Navegar p/ notas
 - Sair do aplicativo
- 
-## Como usar
- 
-(Em breve)
  
 ## Desenvolvedora do Projeto
  

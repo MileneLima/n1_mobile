@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:n1_mobile/addNotes.dart';
 import 'package:n1_mobile/categories.dart';
 import 'package:n1_mobile/login.dart';
 import 'package:n1_mobile/profile.dart';
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -69,7 +72,7 @@ class Home extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 40,
-                       backgroundColor: Colors.white,
+                      backgroundColor: Colors.white,
                       backgroundImage: AssetImage('../lib/assets/65581.png'),
                     ),
                     SizedBox(height: 10),
@@ -110,9 +113,16 @@ class Home extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            CategoriesPage()),
+                    MaterialPageRoute(builder: (context) => CategoriesPage()),
+                  );
+                },
+              ),
+              ListTile(
+                title: Text('Notas'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AddNotes()),
                   );
                 },
               ),
@@ -123,7 +133,7 @@ class Home extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (BuildContext context) => LoginScreen(),
                     ),
-                    (route) => false, 
+                    (route) => false,
                   );
                 },
               ),

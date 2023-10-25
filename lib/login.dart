@@ -3,6 +3,8 @@ import 'package:n1_mobile/register.dart';
 import 'package:n1_mobile/categories.dart';
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }

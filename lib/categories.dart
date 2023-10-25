@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:n1_mobile/addNotes.dart';
 import 'package:n1_mobile/home.dart';
 import 'package:n1_mobile/login.dart';
 import 'package:n1_mobile/profile.dart';
@@ -108,6 +109,15 @@ class CategoriesPage extends StatelessWidget {
                 );
               },
             ),
+             ListTile(
+                title: Text('Notas'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AddNotes()),
+                  );
+                },
+              ),
             ListTile(
               title: Text('Sair'),
               onTap: () {
