@@ -55,4 +55,4 @@ O objetivo deste projeto é criar uma plataforma digital que forneça uma coleç
 ### Informações adicionais
  
 - O projeto está em fase de desenvolvimento, podendo ser adicionado mais funcionalidades para se tornar completo.
-Última atualização: 27/09/2023
+Última atualização: 25/10/2023
